@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b33d942-3410-4033-8e6a-9f2bda681cf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/DisplayType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/client/TelevisionDisplayAdvisorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/client/TelevisionValidationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/util/TelevisionDisplayAdvisor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/Television.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/Television.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/Tuner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/Tuner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/client/TelevisionClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/client/TelevisionClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/client/TelevisionTestSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/client/TelevisionTestSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniLab01.2/src/com/entertainment/Television.java" beforeDir="false" afterPath="$PROJECT_DIR$/MiniLab01.2/src/com/entertainment/Television.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab01.2/com/entertainment/Television.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab01.2/com/entertainment/Television.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab01.2/com/entertainment/Tuner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab01.2/com/entertainment/Tuner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab01.2/com/entertainment/client/TelevisionClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab01.2/com/entertainment/client/TelevisionClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/client/TelevisionDisplayAdvisorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/client/TelevisionDisplayAdvisorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/util/TelevisionDisplayAdvisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01.2/src/com/entertainment/util/TelevisionDisplayAdvisor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,20 +47,7 @@
       <recent name="C:\StudentWork\IntmJ\workspace\Lab01.2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TelevisionClient">
-    <configuration name="PersonTestHashCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.person.client.PersonTestHashCode" />
-      <module name="MiniLab01.1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.person.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TelevisionDisplayAdvisorTest">
     <configuration name="TelevisionClient (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.entertainment.client.TelevisionClient" />
       <module name="MiniLab01.2" />
@@ -86,6 +63,19 @@
     </configuration>
     <configuration name="TelevisionClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.entertainment.client.TelevisionClient" />
+      <module name="Lab01.2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.entertainment.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TelevisionDisplayAdvisorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.entertainment.client.TelevisionDisplayAdvisorTest" />
       <module name="Lab01.2" />
       <extension name="coverage">
         <pattern>
@@ -125,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TelevisionDisplayAdvisorTest" />
         <item itemvalue="Application.TelevisionValidationTest" />
         <item itemvalue="Application.TelevisionClient (1)" />
         <item itemvalue="Application.TelevisionTestSort" />
         <item itemvalue="Application.TelevisionClient" />
-        <item itemvalue="Application.PersonTestHashCode" />
       </list>
     </recent_temporary>
   </component>
@@ -159,22 +149,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="279" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1588019256760" />
-    <state width="1630" height="212" key="GridCell.Tab.0.bottom" timestamp="1588025238273">
+    <state width="1630" height="211" key="GridCell.Tab.0.bottom" timestamp="1588026663470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1630" height="212" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588025238273" />
-    <state width="1630" height="212" key="GridCell.Tab.0.center" timestamp="1588025238273">
+    <state width="1630" height="211" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588026663470" />
+    <state width="1630" height="211" key="GridCell.Tab.0.center" timestamp="1588026663470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1630" height="212" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588025238273" />
-    <state width="1630" height="212" key="GridCell.Tab.0.left" timestamp="1588025238273">
+    <state width="1630" height="211" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588026663470" />
+    <state width="1630" height="211" key="GridCell.Tab.0.left" timestamp="1588026663470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1630" height="212" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588025238273" />
-    <state width="1630" height="212" key="GridCell.Tab.0.right" timestamp="1588025238273">
+    <state width="1630" height="211" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588026663470" />
+    <state width="1630" height="211" key="GridCell.Tab.0.right" timestamp="1588026663470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1630" height="212" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588025238273" />
+    <state width="1630" height="211" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588026663470" />
     <state x="178" y="0" key="SettingsEditor" timestamp="1588001156857">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
