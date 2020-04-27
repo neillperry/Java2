@@ -2,7 +2,7 @@ package com.entertainment;
 
 import java.util.Objects;
 
-public class Television {
+public class Television implements Comparable<Television> {
     // INSTANCE VARIABLES
     private String brand;
     private int volume;
@@ -19,7 +19,7 @@ public class Television {
         setVolume(volume);
     }
 
-    public Television(int volume, String brand){
+    public Television(String brand, int volume){
         setBrand(brand);
         setVolume(volume);
     }
@@ -86,5 +86,10 @@ public class Television {
     public int hashCode() {
         //return Objects.hash(brand, volume);
         return Objects.hash(getBrand(), getVolume());
+    }
+
+
+    public int compareTo(Television other){
+        return this.getBrand().compareTo(other.getBrand());
     }
 }

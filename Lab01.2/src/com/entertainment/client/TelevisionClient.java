@@ -12,7 +12,7 @@ public class TelevisionClient {
     public static void main(String[] args) {
         // create 2 instances of television using the different constructors
         Television tv1 = new Television();
-        Television tv2 = new Television(12, "Apple");
+        Television tv2 = new Television("Apple", 12);
 
         // print out the two televisions to see the different values
         System.out.println("Print out the two televisions");
@@ -28,8 +28,8 @@ public class TelevisionClient {
 
         // create two more instances of television with identifical properties
         System.out.println("Create 2 more televisions with identical properties");
-        Television tv3 = new Television(12, "Apple");
-        Television tv4 = new Television(12, "Apple");
+        Television tv3 = new Television("Apple", 12);
+        Television tv4 = new Television("Apple", 12);
         System.out.println();
 
         // see how the two objects compare
