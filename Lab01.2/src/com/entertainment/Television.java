@@ -1,7 +1,9 @@
 package com.entertainment;
 
+import java.util.Objects;
+
 public class Television {
-    // instance fields
+    // INSTANCE VARIABLES
     private String brand;
     private int volume;
     private Tuner tuner =  new Tuner();
@@ -22,11 +24,6 @@ public class Television {
         setVolume(volume);
     }
 
-    //TO STRING METHOD
-    public String toString() {
-        return getClass().getSimpleName() + " [brand="
-+ getBrand() + ", volume= " + getVolume() + ", currentChannel=" + getCurrentChannel() + "]";}
-
 
     // BUSINESS METHODS
     public int getCurrentChannel() {
@@ -38,7 +35,7 @@ public class Television {
     }
 
 
-    // GETTORS and SETTORS
+    // ACCESSSOR METHODS
     public String getBrand() {
         return brand;
     }
@@ -53,5 +50,41 @@ public class Television {
 
     public void setVolume(int volume) {
         this.volume = volume;
+    }
+
+    //TO STRING METHOD
+    public String toString() {
+        return getClass().getSimpleName() +
+                " [brand=" + getBrand() +
+                ", volume= " + getVolume() +
+                ", currentChannel=" + getCurrentChannel()
+                + "]";}
+
+
+
+    @Override
+    public boolean equals(Object obj) {
+        boolean result = false;
+        if (obj instanceof Television) {
+            Television other = (Television) obj;
+            result = Objects.equals(this.getBrand(), other.getBrand()) &&
+                    Objects.equals(this.getVolume(), other.getVolume());
+        }
+
+        return result;
+        /*
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Television that = (Television) o;
+        return volume == that.volume &&
+                Objects.equals(brand, that.brand);
+
+         */
+    }
+
+    @Override
+    public int hashCode() {
+        //return Objects.hash(brand, volume);
+        return Objects.hash(getBrand(), getVolume());
     }
 }
