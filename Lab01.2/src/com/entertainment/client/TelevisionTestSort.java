@@ -38,7 +38,7 @@ public class TelevisionTestSort {
       System.out.println(tv);
     }
     System.out.println();
-    
+
   }
   
   // dataset for testing

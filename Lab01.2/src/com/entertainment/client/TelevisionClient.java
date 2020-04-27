@@ -1,15 +1,36 @@
 package com.entertainment.client;
 
 import com.entertainment.Television;
-
-import java.util.HashSet;
-import java.util.Set;
+import com.entertainment.DisplayType;
 
 
 public class TelevisionClient {
 
 
     public static void main(String[] args) {
+
+        // Test code for Lab 1.4
+        Television tv1 = new Television();
+        System.out.println("This is the first television:");
+        System.out.println(tv1);
+        System.out.println();
+
+        Television tv2 = new Television("RCA", 10);
+        System.out.println("This is the second television:");
+        System.out.println(tv2);
+        System.out.println();
+
+        Television tv3 = new Television("Sony", 50, DisplayType.LED);
+        System.out.println("This is the third television:");
+        System.out.println(tv3);
+        System.out.println();
+
+
+
+
+
+        /*
+        OLD TEST CODE FROM EARLIER LABS
         // create 2 instances of television using the different constructors
         Television tv1 = new Television();
         Television tv2 = new Television("Apple", 12);
@@ -50,6 +71,7 @@ public class TelevisionClient {
         System.out.println("Print out the entire set:");
         System.out.println(tvs);
         System.out.println();
+        */
     }
 
 

@@ -3,10 +3,15 @@ package com.entertainment;
 import java.util.Objects;
 
 public class Television implements Comparable<Television> {
+    // STATIC VARIABLES
+    public static final int MIN_VOLUME = 0;
+    public static final int MAX_VOLUME = 100;
+
     // INSTANCE VARIABLES
     private String brand;
     private int volume;
     private Tuner tuner =  new Tuner();
+    private DisplayType display;
 
     // CONSTRUCTORS
     public Television(){};
@@ -23,6 +28,13 @@ public class Television implements Comparable<Television> {
         setBrand(brand);
         setVolume(volume);
     }
+
+    public Television(String brand, int volume, DisplayType display) {
+        setBrand(brand);
+        setVolume(volume);
+        setDisplay(display);
+    }
+
 
 
     // BUSINESS METHODS
@@ -49,7 +61,17 @@ public class Television implements Comparable<Television> {
     }
 
     public void setVolume(int volume) {
-        this.volume = volume;
+        if (MIN_VOLUME <= this.volume && this.volume <= MAX_VOLUME) {
+            this.volume = volume;
+        }
+    }
+
+    public DisplayType getDisplay() {
+        return display;
+    }
+
+    public void setDisplay(DisplayType display) {
+        this.display = display;
     }
 
     //TO STRING METHOD
@@ -57,6 +79,7 @@ public class Television implements Comparable<Television> {
         return getClass().getSimpleName() +
                 " [brand=" + getBrand() +
                 ", volume= " + getVolume() +
+                ", display type=" + getDisplay() +
                 ", currentChannel=" + getCurrentChannel()
                 + "]";}
 
@@ -68,7 +91,8 @@ public class Television implements Comparable<Television> {
         if (obj instanceof Television) {
             Television other = (Television) obj;
             result = Objects.equals(this.getBrand(), other.getBrand()) &&
-                    Objects.equals(this.getVolume(), other.getVolume());
+                    Objects.equals(this.getVolume(), other.getVolume()) &&
+                    Objects.equals(this.getBrand(), other.getBrand());
         }
 
         return result;
@@ -85,7 +109,7 @@ public class Television implements Comparable<Television> {
     @Override
     public int hashCode() {
         //return Objects.hash(brand, volume);
-        return Objects.hash(getBrand(), getVolume());
+        return Objects.hash(getBrand(), getVolume(), getBrand());
     }
 
 

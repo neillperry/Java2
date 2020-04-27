@@ -8,10 +8,11 @@
  */
 package com.entertainment;
 
+
 public class Television {
   private String brand;
   private int volume;
-  private Tuner tuner = new Tuner();  // set up internally and used for channel management
+  private static Tuner tuner = new Tuner();  // set up internally and used for channel management
   
   public Television() {
   }
