@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b33d942-3410-4033-8e6a-9f2bda681cf8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Lab01.7/src/com/mytime/DerivedDateTimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01.7/src/com/mytime/DerivedDateTimeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/JUnit4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/HourlyEmployeeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/LifecycleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/SalariedEmployeeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab03.1/Lab03.1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.1/Lab03.1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab03.1/test/com/math/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.1/test/com/math/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab03.2/Lab03.2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/Lab03.2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/HourlyEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/HourlyEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/SalariedEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/SalariedEmployee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +23,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -32,94 +43,118 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Lab02.1" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.javatunes.personnel" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\StudentWork\IntmJ\workspace\Lab02.1" />
       <recent name="C:\StudentWork\IntmJ\workspace\Lab01.2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DerivedDateTimeTest">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.client.Client" />
-      <module name="Lab02.1" />
+  <component name="RunManager" selected="JUnit.HourlyEmployeeTest">
+    <configuration name="HourlyEmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javatunes.personnel.client.*" />
+          <option name="PATTERN" value="com.javatunes.personnel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.HourlyEmployeeTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateTimeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mytime.DateTimeTest" />
-      <module name="Lab01.7" />
+    <configuration name="LifecycleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mytime.*" />
+          <option name="PATTERN" value="com.javatunes.personnel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.LifecycleTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DerivedDateTimeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mytime.DerivedDateTimeTest" />
-      <module name="Lab01.7" />
+    <configuration name="SalariedEmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mytime.*" />
+          <option name="PATTERN" value="com.javatunes.personnel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.SalariedEmployeeTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InterfaceMethodsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.entertainment.InterfaceMethodsTest" />
-      <module name="Lab02.3" />
+    <configuration name="SalariedEmployeeTest.equalsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.entertainment.*" />
+          <option name="PATTERN" value="com.javatunes.personnel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.SalariedEmployeeTest" />
+      <option name="METHOD_NAME" value="equalsTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaxClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.javatunes.corp.client.TaxClient" />
-      <module name="Lab02.1" />
+    <configuration name="SalariedEmployeeTest.hashCodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javatunes.corp.client.*" />
+          <option name="PATTERN" value="com.javatunes.personnel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.SalariedEmployeeTest" />
+      <option name="METHOD_NAME" value="hashCodeTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DerivedDateTimeTest" />
-        <item itemvalue="Application.InterfaceMethodsTest" />
-        <item itemvalue="Application.TaxClient" />
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.DateTimeTest" />
+        <item itemvalue="JUnit.HourlyEmployeeTest" />
+        <item itemvalue="JUnit.SalariedEmployeeTest.hashCodeTest" />
+        <item itemvalue="JUnit.SalariedEmployeeTest.equalsTest" />
+        <item itemvalue="JUnit.LifecycleTest" />
+        <item itemvalue="JUnit.SalariedEmployeeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -137,6 +172,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="279" y="56" key="#Project_Structure" timestamp="1588104563201">
+      <screen x="0" y="23" width="1680" height="943" />
+    </state>
+    <state x="279" y="56" key="#Project_Structure/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588104563201" />
     <state x="408" y="136" width="1143" height="765" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588025998269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -146,34 +185,46 @@
     </state>
     <state x="672" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588024407140" />
     <state x="588" y="68" key="#com.intellij.ide.util.MemberChooser/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588041373337" />
+    <state x="529" y="236" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1588104554779">
+      <screen x="0" y="23" width="1680" height="943" />
+    </state>
+    <state x="529" y="236" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588104554779" />
     <state x="585" y="279" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1588019256760">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="279" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1588019256760" />
-    <state width="1390" height="190" key="GridCell.Tab.0.bottom" timestamp="1588102255950">
+    <state width="1390" height="200" key="GridCell.Tab.0.bottom" timestamp="1588109139076">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588086620698" />
-    <state width="1390" height="190" key="GridCell.Tab.0.bottom/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588102255950" />
-    <state width="1390" height="190" key="GridCell.Tab.0.center" timestamp="1588102255949">
+    <state width="1390" height="200" key="GridCell.Tab.0.bottom/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588109139076" />
+    <state width="1390" height="200" key="GridCell.Tab.0.center" timestamp="1588109139076">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588086620698" />
-    <state width="1390" height="190" key="GridCell.Tab.0.center/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588102255949" />
-    <state width="1390" height="190" key="GridCell.Tab.0.left" timestamp="1588102255949">
+    <state width="1390" height="200" key="GridCell.Tab.0.center/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588109139076" />
+    <state width="1390" height="200" key="GridCell.Tab.0.left" timestamp="1588109139075">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588086620698" />
-    <state width="1390" height="190" key="GridCell.Tab.0.left/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588102255949" />
-    <state width="1390" height="190" key="GridCell.Tab.0.right" timestamp="1588102255950">
+    <state width="1390" height="200" key="GridCell.Tab.0.left/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588109139075" />
+    <state width="1390" height="200" key="GridCell.Tab.0.right" timestamp="1588109139076">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588086620698" />
-    <state width="1390" height="190" key="GridCell.Tab.0.right/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588102255950" />
+    <state width="1390" height="200" key="GridCell.Tab.0.right/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588109139076" />
     <state x="178" y="0" key="SettingsEditor" timestamp="1588001156857">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="178" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588001156857" />
+    <state x="488" y="374" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1588107482086">
+      <screen x="0" y="23" width="1680" height="943" />
+    </state>
+    <state x="488" y="374" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588107482086" />
+    <state x="557" y="310" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588105471097">
+      <screen x="0" y="23" width="1680" height="943" />
+    </state>
+    <state x="557" y="310" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588105471097" />
     <state x="407" y="-2" width="1009" height="1470" key="search.everywhere.popup" timestamp="1588019416479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
