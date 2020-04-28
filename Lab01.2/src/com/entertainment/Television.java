@@ -1,17 +1,21 @@
 package com.entertainment;
 
+import java.sql.SQLOutput;
 import java.util.Objects;
 
 public class Television implements Comparable<Television> {
     // STATIC VARIABLES
     public static final int MIN_VOLUME = 0;
     public static final int MAX_VOLUME = 100;
+    public static final int MIN_UNSAFE_CHANNEL = 500;
+    public static final int MAX_UNSAFE_CHANNEL = 599;
 
     // INSTANCE VARIABLES
     private String brand;
     private int volume;
     private Tuner tuner =  new Tuner();
     private DisplayType display;
+    private boolean parentalControl = false;
 
     // CONSTRUCTORS
     public Television(){};
@@ -20,7 +24,7 @@ public class Television implements Comparable<Television> {
         setBrand(brand);
     }
 
-    public Television(int volume){
+    public Television(int volume) throws IllegalArgumentException {
         setVolume(volume);
     }
 
@@ -42,8 +46,14 @@ public class Television implements Comparable<Television> {
         return tuner.getChannel();
     }
 
-    public void changeChannel(int channel){
-        tuner.setChannel(channel);
+    public void changeChannel(int channel) throws InvalidChannelException,ChannelDisallowedException {
+        if (!(isChannelSafe(channel)) && isParentalControlOn()) {
+            throw new ChannelDisallowedException("Channels blocked by parental control");
+        } else if (channel < 0) {
+            throw new InvalidChannelException("Invalid channel " + channel);
+        } else {
+            tuner.setChannel(channel);
+        }
     }
 
 
@@ -60,9 +70,11 @@ public class Television implements Comparable<Television> {
         return volume;
     }
 
-    public void setVolume(int volume) {
-        if (MIN_VOLUME <= this.volume && this.volume <= MAX_VOLUME) {
+    public void setVolume(int volume) throws IllegalArgumentException {
+        if (MIN_VOLUME <= volume && volume <= MAX_VOLUME) {
             this.volume = volume;
+        } else {
+            throw new IllegalArgumentException("Invalid volume " + volume);
         }
     }
 
@@ -72,6 +84,44 @@ public class Television implements Comparable<Television> {
 
     public void setDisplay(DisplayType display) {
         this.display = display;
+    }
+
+    public boolean isParentalControlOn() {
+        return parentalControl;
+    }
+
+    public void setParentalControl() throws InvalidChannelException,ChannelDisallowedException {
+        // check to see if Parental Control is enabled
+        if (isParentalControlOn()) {
+            // if so, disable it
+            disableParentalControl();
+        // otherwise, enable it
+        } else {
+            // first, check to see if current channel is blocked
+            if (!isChannelSafe(getCurrentChannel())) {
+                // if current channel is blocked, tune the TV to a safe channel
+                this.changeChannel(1);
+            }
+            // after ensuring current channel is safe, enable Parental control
+            enableParentalControl();
+        }
+    }
+
+    private void enableParentalControl() {
+        this.parentalControl = true;
+    }
+
+    private void disableParentalControl() {
+        this.parentalControl = false;
+    }
+
+
+    private boolean isChannelSafe(int channel) {
+        if (MIN_UNSAFE_CHANNEL <= channel && channel <= MAX_UNSAFE_CHANNEL) {
+            return false;
+        } else {
+            return true;
+        }
     }
 
     //TO STRING METHOD
