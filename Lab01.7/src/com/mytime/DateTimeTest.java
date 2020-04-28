@@ -9,6 +9,8 @@
 package com.mytime;
 
 import java.time.LocalDate;
+import java.util.Date;
+import java.time.LocalDateTime;
 
 public class DateTimeTest {
   /**
@@ -16,7 +18,7 @@ public class DateTimeTest {
    * To run one test method at a time, uncomment the call to the one you want to execute.
    */
   public static void main(String[] args) {
-    // testNow();
+    testNow();
     // testCreate();
     // testParse();
     // testFormat();
@@ -26,7 +28,13 @@ public class DateTimeTest {
    * TASK: create current date, time, and date-time via now() and then print them.
    */
   public static void testNow() {
-    // TODO
+    LocalDate today = LocalDate.now();
+    LocalDateTime now = LocalDateTime.now();
+    Date date = new Date(System.currentTimeMillis());
+
+    System.out.println("Local Date: " + today);
+    System.out.println("Date Time: " + now);
+    System.out.println("Date: " + date);
   }
   
   /**
@@ -46,6 +54,7 @@ public class DateTimeTest {
     // TODO: create your birthday by parsing a text representation in standard format.
     
     // OPTIONAL: now create it by parsing text in the form "2/6/2014" (this is Feb 6, not Jun 2).
+    //LocalDate dob = LocalDate.parse(args[1]);
   }
   
   /**
