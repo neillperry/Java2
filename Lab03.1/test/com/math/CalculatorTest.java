@@ -29,5 +29,6 @@ public class CalculatorTest {
   public void testIsEven() {
     Calculator calc = new Calculator();
     assertTrue(calc.isEven(4));  // expected, actual
+    assertFalse(calc.isEven(11));
   }
 }
