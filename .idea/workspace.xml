@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b33d942-3410-4033-8e6a-9f2bda681cf8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02.1/src/com/javatunes/personnel/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab02.1/src/com/javatunes/personnel/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02.1/src/com/javatunes/personnel/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab02.1/src/com/javatunes/personnel/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02.1/src/com/javatunes/personnel/HourlyEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab02.1/src/com/javatunes/personnel/HourlyEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02.1/src/com/javatunes/personnel/SalariedEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab02.1/src/com/javatunes/personnel/SalariedEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02.1/src/com/javatunes/personnel/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab02.1/src/com/javatunes/personnel/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab02.1/src/com/javatunes/corp/Corporation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab02.1/src/com/javatunes/corp/client/TaxClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab02.1/src/gov/irs/IRS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab02.1/src/gov/irs/TaxPayer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lab02.1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -47,6 +45,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\StudentWork\IntmJ\workspace\Lab02.1" />
       <recent name="C:\StudentWork\IntmJ\workspace\Lab01.2" />
     </key>
   </component>
