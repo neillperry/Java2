@@ -9,6 +9,7 @@
 package com.javatunes.personnel;
 
 import java.sql.Date;
+import java.util.Objects;
 
 public class SalariedEmployee
 extends Employee {
@@ -18,13 +19,11 @@ extends Employee {
   }
 
   public SalariedEmployee(String name, Date hireDate) {
-    setName(name);
-    setHireDate(hireDate);
+    this();
   }
   
   public SalariedEmployee(String name, Date hireDate, Double salary) {
-    setName(name);
-    setHireDate(hireDate);
+    this();
     setSalary(salary);
   }
   
@@ -34,10 +33,32 @@ extends Employee {
   public void setSalary(Double salary) {
     this.salary = salary;
   }
-  
+
+
+  public void pay() {
+    System.out.println(super.getName() + " is paid " + getSalary());
+  }
+
   @Override
   public String toString() {
-    return getClass().getSimpleName() + ": name=" + getName() + ", hireDate=" + getHireDate() + 
+    return super.toString() +
       ", salary=" + getSalary();
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    boolean result = false;
+    if (obj instanceof SalariedEmployee) {
+      SalariedEmployee other = (SalariedEmployee) obj;
+      result = super.equals(obj) &&
+              Objects.equals(this.getSalary(), other.getSalary());
+    }
+
+    return result;
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(super.hashCode(), getSalary());
   }
 }

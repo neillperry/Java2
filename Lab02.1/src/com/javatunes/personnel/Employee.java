@@ -9,8 +9,9 @@
 package com.javatunes.personnel;
 
 import java.sql.Date;
+import java.util.Objects;
 
-public class Employee {
+public abstract class Employee {
   private String name;
   private Date hireDate;
   
@@ -39,9 +40,28 @@ public class Employee {
   public void setHireDate(Date hireDate) {
     this.hireDate = hireDate;
   }
-  
+
+  public abstract void pay();
+
   @Override
   public String toString() {
     return getClass().getSimpleName() + ": name=" + getName() + ", hireDate=" + getHireDate();
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    boolean result = false;
+    if (obj instanceof Employee) {
+      Employee other = (Employee) obj;
+      result = Objects.equals(this.getName(), other.getName()) &&
+              Objects.equals(this.getHireDate(), other.getHireDate());
+    }
+
+    return result;
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(getName(), getHireDate());
   }
 }

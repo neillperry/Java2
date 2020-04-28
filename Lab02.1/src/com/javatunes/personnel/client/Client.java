@@ -22,8 +22,8 @@ public class Client {
     System.out.println(dept);
     
     // add Employees to it
-    dept.addEmployee(new Employee("Jacob", Date.valueOf("1988-06-01")));
-    dept.addEmployee(new Employee("Amy",   Date.valueOf("2002-02-20")));
+    dept.addEmployee(new HourlyEmployee("Jacob", Date.valueOf("1988-06-01"), 20.0, 20.0));
+    dept.addEmployee(new SalariedEmployee("Amy",   Date.valueOf("2002-02-20"), 45000.0));
     
     // add HourlyEmployees and SalariedEmployees to it
     dept.addEmployee(new HourlyEmployee("Lonnie",   Date.valueOf("2015-03-31"), 35.0, 40.0));
@@ -40,7 +40,7 @@ public class Client {
     dept.workEmployees();
     
     // TODO: uncomment this after you've implemented payEmployees() in Department
-    // System.out.println("\nPay employees:");
-    // dept.payEmployees();
+    System.out.println("\nPay employees:");
+    dept.payEmployees();
   }
 }

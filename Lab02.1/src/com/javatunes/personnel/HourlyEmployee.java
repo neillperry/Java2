@@ -9,6 +9,7 @@
 package com.javatunes.personnel;
 
 import java.sql.Date;
+import java.util.Objects;
 
 public class HourlyEmployee
 extends Employee {
@@ -19,13 +20,11 @@ extends Employee {
   }
   
   public HourlyEmployee(String name, Date hireDate) {
-    setName(name);
-    setHireDate(hireDate);
+    this();
   }
   
   public HourlyEmployee(String name, Date hireDate, Double rate, Double hours) {
-    setName(name);
-    setHireDate(hireDate);
+    this();
     setRate(rate);
     setHours(hours);
   }
@@ -43,10 +42,32 @@ extends Employee {
   public void setHours(Double hours) {
     this.hours = hours;
   }
+
+  public void pay() {
+    System.out.println(super.getName() + " is paid hourly " + getRate() + " " + getHours());
+  }
   
   @Override
   public String toString() {
-    return getClass().getSimpleName() + ": name=" + getName() + ", hireDate=" + getHireDate() + 
+    return super.toString() +
       ", rate=" + getRate() + ", hours=" + getHours();
-  }  
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    boolean result = false;
+    if (obj instanceof HourlyEmployee) {
+      HourlyEmployee other = (HourlyEmployee) obj;
+      result = super.equals(obj) &&
+              Objects.equals(this.getRate(), other.getRate())  &&
+              Objects.equals(this.getHours(), other.getHours());
+    }
+
+    return result;
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(super.hashCode(), getRate(), getHours());
+  }
 }
