@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b33d942-3410-4033-8e6a-9f2bda681cf8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02.3/src/com/entertainment/Volume.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab02.3/src/com/entertainment/Volume.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02.3/test/com/entertainment/InterfaceMethodsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab02.3/test/com/entertainment/InterfaceMethodsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01.7/src/com/mytime/DateTimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01.7/src/com/mytime/DateTimeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01.7/src/com/mytime/DerivedDateTimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01.7/src/com/mytime/DerivedDateTimeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
       <recent name="C:\StudentWork\IntmJ\workspace\Lab01.2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.InterfaceMethodsTest">
+  <component name="RunManager" selected="Application.DerivedDateTimeTest">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.client.Client" />
       <module name="Lab02.1" />
@@ -65,6 +64,19 @@
     </configuration>
     <configuration name="DateTimeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mytime.DateTimeTest" />
+      <module name="Lab01.7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mytime.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DerivedDateTimeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mytime.DerivedDateTimeTest" />
       <module name="Lab01.7" />
       <extension name="coverage">
         <pattern>
@@ -102,26 +114,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TelevisionParentalControlTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.entertainment.client.TelevisionParentalControlTest" />
-      <module name="Lab01.2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.entertainment.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DerivedDateTimeTest" />
         <item itemvalue="Application.InterfaceMethodsTest" />
         <item itemvalue="Application.TaxClient" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.DateTimeTest" />
-        <item itemvalue="Application.TelevisionParentalControlTest" />
       </list>
     </recent_temporary>
   </component>
@@ -180,5 +179,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="407" y="-2" width="1009" height="1470" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588019416479" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Lab01.7/src/com/mytime/DerivedDateTimeTest.java</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

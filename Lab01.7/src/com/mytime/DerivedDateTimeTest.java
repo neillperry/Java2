@@ -8,14 +8,18 @@
  */
 package com.mytime;
 
+
+import java.time.LocalDate;
+import java.time.Period;
+
 public class DerivedDateTimeTest {
   /**
    * main() calls each of the test methods in turn (currently commented out).
    * To run one test method at a time, uncomment the call to the one you want to execute.
    */
   public static void main(String[] args) {
-    // testPresidentsFirst100Days();
-    // testPopularBirthdays();
+    testPresidentsFirst100Days();
+    testPopularBirthdays();
     // testEarlyRetirement();
     // testLaborDay();
     // testElectionDay();
@@ -29,7 +33,11 @@ public class DerivedDateTimeTest {
    * RESULT: 
    */
   public static void testPresidentsFirst100Days() {
-    // TODO
+    Period first = Period.ofDays(100);
+    LocalDate inauguration = LocalDate.of(2017, 1, 20 );
+    LocalDate first100 = inauguration.plus(first);
+    System.out.println(String.valueOf(first100));
+
   }
 
   /**
@@ -40,9 +48,16 @@ public class DerivedDateTimeTest {
    * RESULT: 
    */
   public static void testPopularBirthdays() {
+    Period gestation = Period.ofMonths(9);
     // TODO: what is the average birthday of someone conceived on Valentine's Day?
-    
+    LocalDate valentine = LocalDate.of(2000, 02, 14);
+    LocalDate valentineBaby = valentine.plus(gestation);
+    System.out.println(String.valueOf(valentineBaby));
+
     // TODO: what is the average birthday of someone conceived on New Year's Eve (after midnight)?
+    LocalDate newYearDay = LocalDate.of(2000, 01, 01);
+    LocalDate newYearBaby = newYearDay.plus(gestation);
+    System.out.println(String.valueOf(newYearBaby));
   }
   
   /**

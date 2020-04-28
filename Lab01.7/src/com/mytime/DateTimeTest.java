@@ -63,8 +63,7 @@ public class DateTimeTest {
     // TODO: create your birthday by parsing a text representation in standard format.
     LocalDate dob = LocalDate.parse("1776-07-04");
     // OPTIONAL: now create it by parsing text in the form "2/6/2014" (this is Feb 6, not Jun 2).
-    String birthdate = "07/04/1776";
-    LocalDate dob2 = LocalDate.parse(birthdate, DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+    LocalDate dob2 = LocalDate.parse("07/04/1776", DateTimeFormatter.ofPattern("MM/dd/yyyy"));
     System.out.println(dob);
     System.out.println(dob2);
   }
