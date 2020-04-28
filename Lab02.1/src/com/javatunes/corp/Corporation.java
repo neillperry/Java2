@@ -8,10 +8,11 @@
  */
 package com.javatunes.corp;
 
+import gov.irs.NamedEntity;
 import gov.irs.TaxPayer;
 
 public class Corporation
-implements TaxPayer {
+implements TaxPayer, NamedEntity {
   private String name;
   
   public Corporation() {
@@ -20,7 +21,7 @@ implements TaxPayer {
   public Corporation(String name) {
     setName(name);
   }
-  
+
   @Override  // interface TaxPayer
   public double payTaxes() {
     double taxes = 0;

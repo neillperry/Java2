@@ -22,6 +22,8 @@ public class IRS {
   public void collectTaxes() {
     for (TaxPayer payer : payers) {
       payer.payTaxes();
+      NamedEntity named = (NamedEntity) payer;
+      String name1 = named.getName();
     }
   }
   

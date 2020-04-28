@@ -8,10 +8,13 @@
  */
 package com.javatunes.personnel;
 
+import gov.irs.NamedEntity;
+import gov.irs.TaxPayer;
+
 import java.sql.Date;
 import java.util.Objects;
 
-public abstract class Employee {
+public abstract class Employee implements TaxPayer, NamedEntity {
   private String name;
   private Date hireDate;
   
@@ -64,4 +67,5 @@ public abstract class Employee {
   public int hashCode() {
     return Objects.hash(getName(), getHireDate());
   }
+
 }
