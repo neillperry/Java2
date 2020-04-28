@@ -11,6 +11,8 @@ package com.mytime;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.time.DayOfWeek;
+import static java.time.temporal.TemporalAdjusters.firstInMonth;
 
 public class DerivedDateTimeTest {
   /**
@@ -20,9 +22,9 @@ public class DerivedDateTimeTest {
   public static void main(String[] args) {
     testPresidentsFirst100Days();
     testPopularBirthdays();
-    // testEarlyRetirement();
-    // testLaborDay();
-    // testElectionDay();
+    testEarlyRetirement();
+    testLaborDay();
+    testElectionDay();
     // testAnniversary();
   }
   
@@ -36,7 +38,7 @@ public class DerivedDateTimeTest {
     Period first = Period.ofDays(100);
     LocalDate inauguration = LocalDate.of(2017, 1, 20 );
     LocalDate first100 = inauguration.plus(first);
-    System.out.println(String.valueOf(first100));
+    System.out.println("100 days end date: " +String.valueOf(first100));
 
   }
 
@@ -52,12 +54,12 @@ public class DerivedDateTimeTest {
     // TODO: what is the average birthday of someone conceived on Valentine's Day?
     LocalDate valentine = LocalDate.of(2000, 02, 14);
     LocalDate valentineBaby = valentine.plus(gestation);
-    System.out.println(String.valueOf(valentineBaby));
+    System.out.println("Valentine Baby: " + String.valueOf(valentineBaby));
 
     // TODO: what is the average birthday of someone conceived on New Year's Eve (after midnight)?
     LocalDate newYearDay = LocalDate.of(2000, 01, 01);
     LocalDate newYearBaby = newYearDay.plus(gestation);
-    System.out.println(String.valueOf(newYearBaby));
+    System.out.println("New Year Baby: " + String.valueOf(newYearBaby));
   }
   
   /**
@@ -68,6 +70,10 @@ public class DerivedDateTimeTest {
    * RESULT: 
    */
   public static void testEarlyRetirement() {
+    Period retirementAge = Period.ofMonths(714);
+    LocalDate dob = LocalDate.of(1776, 7, 4);
+    LocalDate retirementDate = dob.plus(retirementAge);
+    System.out.println("Retirement Date: " + String.valueOf(retirementDate));
     // TODO
   }
   
@@ -79,7 +85,9 @@ public class DerivedDateTimeTest {
    * RESULT: 
    */
   public static void testLaborDay() {
-    // TODO
+    LocalDate dob = LocalDate.of(1776, 9, 1);
+    LocalDate firstLabor = dob.with(firstInMonth(DayOfWeek.MONDAY));
+    System.out.println("First Labor Day: " + String.valueOf(firstLabor));
   }
   
   /**
@@ -89,7 +97,10 @@ public class DerivedDateTimeTest {
    * RESULT: 
    */
   public static void testElectionDay() {
-    // TODO
+    LocalDate dob = LocalDate.of(2024, 11, 1);
+    LocalDate firstMonday = dob.with(firstInMonth(DayOfWeek.MONDAY));
+    LocalDate electionDay = firstMonday.plusDays(1);
+    System.out.println("Election Day 2024: " + String.valueOf(electionDay));
   }
   
   /**
