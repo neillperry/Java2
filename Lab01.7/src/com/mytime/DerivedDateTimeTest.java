@@ -25,7 +25,7 @@ public class DerivedDateTimeTest {
     testEarlyRetirement();
     testLaborDay();
     testElectionDay();
-    // testAnniversary();
+    testAnniversary();
   }
   
   /**
@@ -112,6 +112,18 @@ public class DerivedDateTimeTest {
    * RESULT: 
    */
   public static void testAnniversary() {
-    // TODO
+    LocalDate wedding = LocalDate.of(1969, 6, 6);
+    LocalDate annivesary = wedding.plusYears(50);
+    LocalDate modified = annivesary.with(firstInMonth(DayOfWeek.SATURDAY));
+
+
+    if (annivesary.getDayOfWeek().equals(DayOfWeek.SATURDAY)) {
+      System.out.println("Their annivesary is on a Saturday!");
+    } else if (modified.isBefore(annivesary)) {
+      LocalDate newModified = modified.plusDays(7);
+      System.out.println("They will celebrate on: " + String.valueOf(newModified));
+    } else {
+      System.out.println("They will celebrate on: " + String.valueOf(modified));
+    }
   }
 }
