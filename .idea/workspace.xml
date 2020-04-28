@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b33d942-3410-4033-8e6a-9f2bda681cf8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/EmployeeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03.1/test/com/math/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.1/test/com/math/CalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/HourlyEmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/HourlyEmployeeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/SalariedEmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/SalariedEmployeeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Lab03.1/com/math/CalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Lab03.1/com/math/CalculatorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Lab03.2/com/javatunes/personnel/HourlyEmployeeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Lab03.2/com/javatunes/personnel/HourlyEmployeeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Lab03.2/com/javatunes/personnel/SalariedEmployeeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Lab03.2/com/javatunes/personnel/SalariedEmployeeTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +61,7 @@
       <recent name="C:\StudentWork\IntmJ\workspace\Lab01.2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SalariedEmployeeTest">
+  <component name="RunManager" selected="JUnit.EmployeeTest">
     <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab03.1" />
       <extension name="coverage">
@@ -77,6 +72,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.math" />
       <option name="MAIN_CLASS_NAME" value="com.math.CalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javatunes.personnel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.EmployeeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,22 +122,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SalariedEmployeeTest.equalsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab03.2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.javatunes.personnel.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
-      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.SalariedEmployeeTest" />
-      <option name="METHOD_NAME" value="equalsTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SalariedEmployeeTest.hashCodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab03.2" />
       <extension name="coverage">
@@ -146,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeeTest" />
         <item itemvalue="JUnit.SalariedEmployeeTest" />
         <item itemvalue="JUnit.HourlyEmployeeTest" />
         <item itemvalue="JUnit.CalculatorTest" />
         <item itemvalue="JUnit.SalariedEmployeeTest.hashCodeTest" />
-        <item itemvalue="JUnit.SalariedEmployeeTest.equalsTest" />
       </list>
     </recent_temporary>
   </component>
