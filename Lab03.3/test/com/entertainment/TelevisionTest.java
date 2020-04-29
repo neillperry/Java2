@@ -20,8 +20,13 @@ public class TelevisionTest {
 
     @Test
     public void setVolumeTest() {
-        tv1.setVolume(22);
-        assertEquals(22, tv1.getVolume());
+        // Lower Bound
+        tv1.setVolume(0);
+        assertEquals(0, tv1.getVolume());
+
+        // Upper Bound
+        tv1.setVolume(100);
+        assertEquals(100, tv1.getVolume());
     }
 
     @Test
@@ -87,6 +92,12 @@ public class TelevisionTest {
     @Test
     public void hashCodeDifferentTest() {
         assertNotEquals(tv1.hashCode(), tv3.hashCode());
+    }
+
+
+    @Test
+    public void testComparableByBrand() {
+        assertTrue(tv1.compareTo(tv3) < 0);
     }
 }
 

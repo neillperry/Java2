@@ -35,15 +35,42 @@ public class CatalogTest {
   }
 
   @Test
-  public void testFindByBrands() {
+  public void testFindByBrands_Sony() {
     Map<String,Collection<Television>> tvMap = Catalog.findByBrands("Hitachi", "Sony");
+
     assertEquals(2, tvMap.size());
-    assertTrue(tvMap.containsKey("Hitachi"));
-    assertTrue(tvMap.containsKey("Sony"));
+
     Collection<Television> sony = tvMap.get("Sony");
-    Collection<Television> hitachi = tvMap.get("Hitachi");
+    assertTrue(tvMap.containsKey("Sony"));
     assertEquals(7, sony.size());
+  }
+
+  @Test
+  public void testFindByBrands_Hitachi() {
+    Map<String,Collection<Television>> tvMap = Catalog.findByBrands("Hitachi", "Sony");
+
+    assertEquals(2, tvMap.size());
+
+    Collection<Television> hitachi = tvMap.get("Hitachi");
+    assertTrue(tvMap.containsKey("Hitachi"));
     assertEquals(5, hitachi.size());
   }
+
+  @Test
+  public void testFindByBrands_ZeroArguments() {
+    Map<String, Collection<Television>> tvMap = Catalog.findByBrands();
+
+    assertNotNull(tvMap);
+    assertTrue(tvMap.isEmpty());
+
+  }
+
+  @Test
+  public void testGetInventory() {
+
+
+  }
+
+
 
 }

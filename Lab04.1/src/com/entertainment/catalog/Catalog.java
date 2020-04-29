@@ -83,24 +83,15 @@ public class Catalog {
    * NOTE: returning a direct reference to it has consequences!
    *  A client can manipulate it, since it has a direct reference to it.
    *  Sometimes this is okay, but not here.
-   *
-   *
-   *
-   *
-   *
-   *
-   *
-   *
-   *
-   *
-   *  
    * TODO: change this to return a read-only view of the catalog.
    * 
    * You should explore the Javadoc for the java.util.Collections *class*.
    *  This is an all-static utility class, not the java.util.Collection interface.
    */
+
   public static Collection<Television> getInventory() {
-    return catalog;
+    //return catalog;
+    return Collections.checkedCollection(catalog, Television.class);
   }
 
   /*

@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b33d942-3410-4033-8e6a-9f2bda681cf8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Lab03.3/test/com/entertainment/TelevisionBrandChannelComparatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab03.3/test/com/entertainment/TelevisionChannelComparatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/EmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/EmployeeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/HourlyEmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/HourlyEmployeeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/SalariedEmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/SalariedEmployeeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab03.3/test/com/entertainment/TelevisionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.3/test/com/entertainment/TelevisionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab04.1/Lab04.1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab04.1/Lab04.1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab04.1/src/com/entertainment/catalog/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab04.1/src/com/entertainment/catalog/Catalog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab04.1/test/com/entertainment/catalog/CatalogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab04.1/test/com/entertainment/catalog/CatalogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Lab03.3/com/entertainment/TelevisionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Lab03.3/com/entertainment/TelevisionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Lab04.1/com/entertainment/catalog/CatalogTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Lab04.1/com/entertainment/catalog/CatalogTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +21,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -57,6 +57,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.entertainment" />
       <recent name="com.javatunes.personnel" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -67,55 +68,56 @@
       <recent name="C:\StudentWork\IntmJ\workspace\Lab01.2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CatalogTest">
-    <configuration name="CatalogTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab04.1" />
+  <component name="RunManager" selected="JUnit.TelevisionBrandChannelComparatorTest.testCompareByBrand_SameBrand_DifferentChannel">
+    <configuration name="TelevisionBrandChannelComparatorTest.testCompareByBrand_Different" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.entertainment.catalog.*" />
+          <option name="PATTERN" value="com.entertainment.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.entertainment.catalog" />
-      <option name="MAIN_CLASS_NAME" value="com.entertainment.catalog.CatalogTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CatalogTest.testFindByBrandMatches" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab04.1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.entertainment.catalog.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.entertainment.catalog" />
-      <option name="MAIN_CLASS_NAME" value="com.entertainment.catalog.CatalogTest" />
-      <option name="METHOD_NAME" value="testFindByBrandMatches" />
+      <option name="PACKAGE_NAME" value="com.entertainment" />
+      <option name="MAIN_CLASS_NAME" value="com.entertainment.TelevisionBrandChannelComparatorTest" />
+      <option name="METHOD_NAME" value="testCompareByBrand_Different" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CatalogTest.testFindByBrandNoMatches" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab04.1" />
+    <configuration name="TelevisionBrandChannelComparatorTest.testCompareByBrand_SameBrand_DifferentChannel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.entertainment.catalog.*" />
+          <option name="PATTERN" value="com.entertainment.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.entertainment.catalog" />
-      <option name="MAIN_CLASS_NAME" value="com.entertainment.catalog.CatalogTest" />
-      <option name="METHOD_NAME" value="testFindByBrandNoMatches" />
+      <option name="PACKAGE_NAME" value="com.entertainment" />
+      <option name="MAIN_CLASS_NAME" value="com.entertainment.TelevisionBrandChannelComparatorTest" />
+      <option name="METHOD_NAME" value="testCompareByBrand_SameBrand_DifferentChannel" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TelevisionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TelevisionChannelComparatorTest.testCompareByChannel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.entertainment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.entertainment" />
+      <option name="MAIN_CLASS_NAME" value="com.entertainment.TelevisionChannelComparatorTest" />
+      <option name="METHOD_NAME" value="testCompareByChannel" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TelevisionTest.setVolumeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab03.3" />
       <extension name="coverage">
         <pattern>
@@ -125,12 +127,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.entertainment" />
       <option name="MAIN_CLASS_NAME" value="com.entertainment.TelevisionTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="setVolumeTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TelevisionTest.changeChannelInvalidChannelTest_UpperBound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TelevisionTest.testComparableByBrand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab03.3" />
       <extension name="coverage">
         <pattern>
@@ -140,7 +143,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.entertainment" />
       <option name="MAIN_CLASS_NAME" value="com.entertainment.TelevisionTest" />
-      <option name="METHOD_NAME" value="changeChannelInvalidChannelTest_UpperBound" />
+      <option name="METHOD_NAME" value="testComparableByBrand" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CatalogTest" />
-        <item itemvalue="JUnit.TelevisionTest" />
-        <item itemvalue="JUnit.TelevisionTest.changeChannelInvalidChannelTest_UpperBound" />
-        <item itemvalue="JUnit.CatalogTest.testFindByBrandMatches" />
-        <item itemvalue="JUnit.CatalogTest.testFindByBrandNoMatches" />
+        <item itemvalue="JUnit.TelevisionBrandChannelComparatorTest.testCompareByBrand_SameBrand_DifferentChannel" />
+        <item itemvalue="JUnit.TelevisionBrandChannelComparatorTest.testCompareByBrand_Different" />
+        <item itemvalue="JUnit.TelevisionChannelComparatorTest.testCompareByChannel" />
+        <item itemvalue="JUnit.TelevisionTest.testComparableByBrand" />
+        <item itemvalue="JUnit.TelevisionTest.setVolumeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -195,26 +198,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="279" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1588019256760" />
-    <state width="1561" height="188" key="GridCell.Tab.0.bottom" timestamp="1588190916516">
+    <state width="1561" height="107" key="GridCell.Tab.0.bottom" timestamp="1588195572466">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588173877246" />
-    <state width="1561" height="188" key="GridCell.Tab.0.bottom/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588190916516" />
-    <state width="1561" height="188" key="GridCell.Tab.0.center" timestamp="1588190916515">
+    <state width="1561" height="107" key="GridCell.Tab.0.bottom/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588195572466" />
+    <state width="1561" height="107" key="GridCell.Tab.0.center" timestamp="1588195572465">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588173877246" />
-    <state width="1561" height="188" key="GridCell.Tab.0.center/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588190916515" />
-    <state width="1561" height="188" key="GridCell.Tab.0.left" timestamp="1588190916515">
+    <state width="1561" height="107" key="GridCell.Tab.0.center/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588195572465" />
+    <state width="1561" height="107" key="GridCell.Tab.0.left" timestamp="1588195572465">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588173877246" />
-    <state width="1561" height="188" key="GridCell.Tab.0.left/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588190916515" />
-    <state width="1561" height="188" key="GridCell.Tab.0.right" timestamp="1588190916516">
+    <state width="1561" height="107" key="GridCell.Tab.0.left/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588195572465" />
+    <state width="1561" height="107" key="GridCell.Tab.0.right" timestamp="1588195572465">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588173877246" />
-    <state width="1561" height="188" key="GridCell.Tab.0.right/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588190916516" />
+    <state width="1561" height="107" key="GridCell.Tab.0.right/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588195572465" />
     <state x="178" y="0" key="SettingsEditor" timestamp="1588001156857">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -223,10 +226,10 @@
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state x="488" y="374" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588107482086" />
-    <state x="557" y="310" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588105471097">
+    <state x="557" y="310" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588193187429">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
-    <state x="557" y="310" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588105471097" />
+    <state x="557" y="310" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588193187429" />
     <state x="407" y="-2" width="1009" height="1470" key="search.everywhere.popup" timestamp="1588019416479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
