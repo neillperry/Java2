@@ -11,7 +11,9 @@ package com.entertainment.catalog;
 import static org.junit.Assert.*;
 import java.util.Collection;
 import java.util.Map;
+import java.util.HashSet;
 
+import com.entertainment.InvalidChannelException;
 import org.junit.Test;
 import com.entertainment.Television;
 
@@ -62,13 +64,36 @@ public class CatalogTest {
 
     assertNotNull(tvMap);
     assertTrue(tvMap.isEmpty());
+  }
 
+  @Test (expected= UnsupportedOperationException.class)
+  public void testGetInventory() throws UnsupportedOperationException {
+    Collection<Television> readOnly = Catalog.getInventory();
+    Television newTV = new Television();
+    readOnly.add(newTV);
   }
 
   @Test
-  public void testGetInventory() {
+  public void removeDuplications() {
+    HashSet noDuplicates = new HashSet<>(Catalog.getInventory());
+    Collection<Television> readOnly = Catalog.getInventory();
 
+    assertTrue(readOnly.size() > noDuplicates.size());
+  }
 
+  @Test
+  public void loudest() {
+    Television loudest = new Television();
+    loudest.setVolume(0);
+
+    for (Television tv: Catalog.getInventory()) {
+      if (tv.getVolume() > loudest.getVolume()) {
+        loudest = tv;
+      }
+    }
+
+    assertEquals(94, loudest.getVolume());
+    assertEquals("Sony", loudest.getBrand());
   }
 
 

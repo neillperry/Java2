@@ -19,6 +19,7 @@ public class Catalog {
   // in-memory catalog of Televisions
   private static final Collection<Television> catalog = new ArrayList<>(30);
 
+
   // prevent direct instantiation, this is an all-static class
   private Catalog() {
   }
@@ -90,9 +91,13 @@ public class Catalog {
    */
 
   public static Collection<Television> getInventory() {
-    //return catalog;
-    return Collections.checkedCollection(catalog, Television.class);
+    //create a read-only copy
+    Collection<Television> readOnly = Collections.unmodifiableCollection(catalog);
+
+    return readOnly;
   }
+
+
 
   /*
    * Loads catalog.
