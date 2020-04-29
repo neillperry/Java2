@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b33d942-3410-4033-8e6a-9f2bda681cf8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab04.1-Extra/test/com/javatunes/catalog/InMemoryCatalogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab04.1-Extra/Lab04.1-Extra.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab04.1-Extra/Lab04.1-Extra.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab04.1-Extra/src/com/javatunes/catalog/test/Client.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +16,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
