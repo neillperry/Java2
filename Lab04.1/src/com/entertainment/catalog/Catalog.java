@@ -28,7 +28,14 @@ public class Catalog {
    * A no-matches result should be an empty collection (not null).
    */
   public static Collection<Television> findByBrand(String brand) {
-    return null;
+    Collection<Television> tvArray = new ArrayList<>();
+    for (Television tv: catalog) {
+      if (tv.getBrand().equals(brand)) {
+        tvArray.add(tv);
+      }
+    }
+
+    return tvArray;
   }
   
   /**
@@ -37,7 +44,38 @@ public class Catalog {
    * A no-brands-passed result should be an empty map (not null).
    */
   public static Map<String,Collection<Television>> findByBrands(String... brands) {
-    return null;
+
+    //create a blank Map that we will store our sorted results
+    Map<String,Collection<Television>> returnMap = new HashMap<String, Collection<Television>>();
+
+    // iterate over the types of brands in varargs, creating an empty collection for each brand
+    for (String brand : brands){
+      returnMap.put(brand, new ArrayList<>());
+    }
+
+    // for each brand in the varargs
+    for (String brand: brands) {
+      //iterate over the entire catalog array
+      for (Television tv: catalog) {
+        // if the brand of the tv in the catalog matches the one in varargs:
+        if (tv.getBrand().equals(brand)) {
+
+          // call up the current value (array) associated with the key of the current MusicItem (genre)
+          Collection<Television> oldValue = returnMap.get(tv.getBrand());
+
+          // modify that variable by passing in the object of the current MusicItem
+          oldValue.add(tv);
+
+          // now replace the oldValue with the updated one with the current item
+          returnMap.replace(tv.getBrand(), oldValue);
+
+        }
+      }
+    }
+
+    // return the map
+    return returnMap;
+
   }
 
   /**
@@ -45,6 +83,16 @@ public class Catalog {
    * NOTE: returning a direct reference to it has consequences!
    *  A client can manipulate it, since it has a direct reference to it.
    *  Sometimes this is okay, but not here.
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   *
    *  
    * TODO: change this to return a read-only view of the catalog.
    * 

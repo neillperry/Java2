@@ -13,20 +13,29 @@ public class EmployeeTest {
 
     @Before
     public void setUp() {
-        employee1 = new HourlyEmployee("Jane", Date.valueOf("2009-08-12"), 20.0, 15.0);
-        employee2 = new HourlyEmployee("Jane", Date.valueOf("2009-08-12"), 20.0, 15.0);
-        employee3 = new HourlyEmployee("Susan", Date.valueOf("2014-02-20"), 33.0, 19.0);
+        employee1 = new HourlyEmployee("Jane", Date.valueOf("2009-08-12"));
+        employee2 = new HourlyEmployee("Jane", Date.valueOf("2009-08-12"));
+        employee3 = new HourlyEmployee("Susan", Date.valueOf("2014-02-20"));
     }
 
     @Test
-    public void equalsTest() {
+    public void equalsSameTest() {
         assertTrue(employee1.equals(employee2));
+    }
+
+    @Test
+    public void equalsDifferentTest() {
         assertFalse(employee1.equals(employee3));
     }
 
+
     @Test
-    public void hashCodeTest() {
+    public void hashCodeSameTest() {
         assertEquals(employee1.hashCode(), employee2.hashCode());
+    }
+
+    @Test
+    public void hashCodeDifferentTest() {
         assertNotEquals(employee1.hashCode(), employee3.hashCode());
     }
 

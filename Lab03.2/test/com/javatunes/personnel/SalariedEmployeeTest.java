@@ -14,6 +14,8 @@ public class SalariedEmployeeTest {
     @Before
     public void setUp() throws Exception {
         employee1 = new SalariedEmployee("Bob", Date.valueOf("2009-08-12"), 30000.0);
+        employee2 = new SalariedEmployee("Bob", Date.valueOf("2009-08-12"), 30000.0);
+        employee3 = new SalariedEmployee("Genghis Khan", Date.valueOf("1182-08-12"), 300000.0);
     }
 
     @Test
@@ -28,18 +30,22 @@ public class SalariedEmployeeTest {
     }
 
     @Test
-    public void equalsTest() {
-        employee2 = new SalariedEmployee("Bob", Date.valueOf("2009-08-12"), 30000.0);
-        employee3 = new SalariedEmployee("Genghis Khan", Date.valueOf("1182-08-12"), 300000.0);
+    public void equalsSameTest() {
         assertTrue(employee1.equals(employee2));
+    }
+
+    @Test
+    public void equalsDifferentTest() {
         assertFalse(employee1.equals(employee3));
     }
 
     @Test
-    public void hashCodeTest() {
-        employee2 = new SalariedEmployee("Bob", Date.valueOf("2009-08-12"), 30000.0);
-        employee3 = new SalariedEmployee("Genghis Khan", Date.valueOf("1182-08-12"), 300000.0);
+    public void hashCodeSameTest() {
         assertEquals(employee1.hashCode(), employee2.hashCode());
+    }
+
+    @Test
+    public void hashCodeDifferentTest() {
         assertNotEquals(employee1.hashCode(), employee3.hashCode());
     }
 }

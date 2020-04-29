@@ -14,6 +14,8 @@ public class TelevisionTest {
     @Before
     public void setUp() throws Exception {
         tv1 = new Television("Apple", 20, DisplayType.LCD);
+        tv2 = new Television("Apple", 20, DisplayType.LCD);
+        tv3 = new Television("Toshiba", 40, DisplayType.LED);
     }
 
     @Test
@@ -23,7 +25,7 @@ public class TelevisionTest {
     }
 
     @Test
-    public void setVolumeIllegalArgumentTest() throws IllegalArgumentException {
+    public void setVolumeIllegalArgumentTest_LowerBound() throws IllegalArgumentException {
         try {
             tv1.setVolume(-22);
         } catch (IllegalArgumentException e) {
@@ -31,51 +33,59 @@ public class TelevisionTest {
         }
     }
 
-
+    @Test
+    public void setVolumeIllegalArgumentTest_UpperBound() throws IllegalArgumentException {
+        try {
+            tv1.setVolume(105);
+        } catch (IllegalArgumentException e) {
+            assertEquals("Invalid volume: 105. Allowed range: [0,100].", e.getMessage());
+        }
+    }
     @Test
     public void changeChannelTest() throws InvalidChannelException {
         tv1.changeChannel(202);
         assertEquals(202, tv1.getCurrentChannel());
     }
 
-    @Test
-    public void changeChannelInvalidChannelTest() {
-        try {
-            tv1.changeChannel(-20);
-            fail("Should have thrown an InvalidChannelException");
-        } catch(InvalidChannelException e) {
-            assertEquals("Invalid channel: -20. Allowed range: [1,999].", e.getMessage());
-        }
+    @Test (expected=InvalidChannelException.class)
+    public void changeChannelInvalidChannelTest_LowerBound() throws InvalidChannelException {
+         tv1.changeChannel(-20);
     }
 
+    @Test (expected=InvalidChannelException.class)
+    public void changeChannelInvalidChannelTest_UpperBound() throws InvalidChannelException {
+            tv1.changeChannel(4030);
+    }
 
     @Test
-    public void compareToTest() {
-        tv2 = new Television("Apple", 20, DisplayType.LCD);
-        tv3 = new Television("Toshiba", 40, DisplayType.LED);
-
+    public void compareToSameTest() {
         // compare two identical instances via the compareTo method
-        int comparison1 = tv1.compareTo(tv2);
-        assertEquals(0, comparison1);
-
-        // compare two dissimilar instances via the compareTo method
-        int comparison2 = tv1.compareTo(tv3);
-        assertNotEquals(0, comparison2);
+        assertEquals(0, tv1.compareTo(tv2));
     }
 
     @Test
-    public void equalsTest() {
-        tv2 = new Television("Apple", 20, DisplayType.LCD);
-        tv3 = new Television("Toshiba", 40, DisplayType.LED);
+    public void compareToDifferentTest() {
+        // compare two dissimilar instances via the compareTo method
+        assertNotEquals(0, tv1.compareTo(tv3));
+    }
+
+    @Test
+    public void equalsSameTest() {
         assertTrue(tv1.equals(tv2));
+    }
+
+    @Test
+    public void equalsDifferentTest() {
         assertFalse(tv1.equals(tv3));
     }
 
     @Test
-    public void hashCodeTest() {
-        tv2 = new Television("Apple", 20, DisplayType.LCD);
-        tv3 = new Television("Toshiba", 40, DisplayType.LED);
+    public void hashCodeSameTest() {
         assertEquals(tv1.hashCode(), tv2.hashCode());
+    }
+
+    @Test
+    public void hashCodeDifferentTest() {
         assertNotEquals(tv1.hashCode(), tv3.hashCode());
     }
 }

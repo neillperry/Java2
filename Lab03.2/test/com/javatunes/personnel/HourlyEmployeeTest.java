@@ -30,14 +30,23 @@ public class HourlyEmployeeTest {
     }
 
     @Test
-    public void equalsTest() {
+    public void equalsSameTest() {
         assertTrue(employee1.equals(employee2));
-        assertFalse(employee1.equals(employee3));
     }
 
     @Test
-    public void hashCodeTest() {
+    public void equalsDifferentTest() {
+        assertFalse(employee1.equals(employee3));
+    }
+
+
+    @Test
+    public void hashCodeSameTest() {
         assertEquals(employee1.hashCode(), employee2.hashCode());
+    }
+
+    @Test
+    public void hashCodeDifferentTest() {
         assertNotEquals(employee1.hashCode(), employee3.hashCode());
     }
 }
