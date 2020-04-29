@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="0b33d942-3410-4033-8e6a-9f2bda681cf8" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="0b33d942-3410-4033-8e6a-9f2bda681cf8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Lab03.3/test/com/entertainment/TelevisionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab03.3/Lab03.3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.3/Lab03.3.iml" afterDir="false" />
+    </list>
+>>>>>>> 568fa6d4ba2d472ef3701de3aa879c8c8590788d
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +66,7 @@
       <recent name="C:\StudentWork\IntmJ\workspace\Lab01.2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeeTest">
+  <component name="RunManager" selected="JUnit.TelevisionTest">
     <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab03.1" />
       <extension name="coverage">
@@ -119,29 +127,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SalariedEmployeeTest.hashCodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab03.2" />
+    <configuration name="TelevisionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javatunes.personnel.*" />
+          <option name="PATTERN" value="com.entertainment.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
-      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.SalariedEmployeeTest" />
-      <option name="METHOD_NAME" value="hashCodeTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.entertainment" />
+      <option name="MAIN_CLASS_NAME" value="com.entertainment.TelevisionTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TelevisionTest" />
         <item itemvalue="JUnit.EmployeeTest" />
         <item itemvalue="JUnit.SalariedEmployeeTest" />
         <item itemvalue="JUnit.HourlyEmployeeTest" />
         <item itemvalue="JUnit.CalculatorTest" />
-        <item itemvalue="JUnit.SalariedEmployeeTest.hashCodeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -159,47 +166,51 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="279" y="56" key="#Project_Structure" timestamp="1588104563201">
+    <state x="279" y="56" key="#Project_Structure" timestamp="1588111515368">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
-    <state x="279" y="56" key="#Project_Structure/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588104563201" />
+    <state x="279" y="56" key="#Project_Structure/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588111515368" />
     <state x="408" y="136" width="1143" height="765" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588025998269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="408" y="136" width="1143" height="765" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588025998269" />
+    <state x="175" y="137" width="1232" height="665" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1588112721043">
+      <screen x="0" y="23" width="1680" height="943" />
+    </state>
+    <state x="175" y="137" width="1232" height="665" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588112721043" />
     <state x="588" y="68" key="#com.intellij.ide.util.MemberChooser" timestamp="1588041373337">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state x="672" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588024407140" />
     <state x="588" y="68" key="#com.intellij.ide.util.MemberChooser/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588041373337" />
-    <state x="529" y="236" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1588104554779">
+    <state x="529" y="236" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1588111509229">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
-    <state x="529" y="236" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588104554779" />
+    <state x="529" y="236" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588111509229" />
     <state x="585" y="279" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1588019256760">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="279" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1588019256760" />
-    <state width="1390" height="200" key="GridCell.Tab.0.bottom" timestamp="1588109983910">
+    <state width="1390" height="279" key="GridCell.Tab.0.bottom" timestamp="1588112799949">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588086620698" />
-    <state width="1390" height="200" key="GridCell.Tab.0.bottom/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588109983910" />
-    <state width="1390" height="200" key="GridCell.Tab.0.center" timestamp="1588109983909">
+    <state width="1390" height="279" key="GridCell.Tab.0.bottom/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588112799949" />
+    <state width="1390" height="279" key="GridCell.Tab.0.center" timestamp="1588112799949">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588086620698" />
-    <state width="1390" height="200" key="GridCell.Tab.0.center/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588109983909" />
-    <state width="1390" height="200" key="GridCell.Tab.0.left" timestamp="1588109983908">
+    <state width="1390" height="279" key="GridCell.Tab.0.center/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588112799949" />
+    <state width="1390" height="279" key="GridCell.Tab.0.left" timestamp="1588112799949">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588086620698" />
-    <state width="1390" height="200" key="GridCell.Tab.0.left/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588109983908" />
-    <state width="1390" height="200" key="GridCell.Tab.0.right" timestamp="1588109983909">
+    <state width="1390" height="279" key="GridCell.Tab.0.left/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588112799949" />
+    <state width="1390" height="279" key="GridCell.Tab.0.right" timestamp="1588112799949">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588086620698" />
-    <state width="1390" height="200" key="GridCell.Tab.0.right/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588109983909" />
+    <state width="1390" height="279" key="GridCell.Tab.0.right/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588112799949" />
     <state x="178" y="0" key="SettingsEditor" timestamp="1588001156857">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
