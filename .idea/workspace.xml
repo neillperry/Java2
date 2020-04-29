@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b33d942-3410-4033-8e6a-9f2bda681cf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lab03.3/test/com/entertainment/TelevisionBrandChannelComparatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab03.3/test/com/entertainment/TelevisionChannelComparatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03.3/test/com/entertainment/TelevisionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.3/test/com/entertainment/TelevisionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab04.1/src/com/entertainment/catalog/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab04.1/src/com/entertainment/catalog/Catalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab04.1/test/com/entertainment/catalog/CatalogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab04.1/test/com/entertainment/catalog/CatalogTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Lab03.3/com/entertainment/TelevisionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Lab03.3/com/entertainment/TelevisionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Lab04.1/com/entertainment/catalog/CatalogTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Lab04.1/com/entertainment/catalog/CatalogTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lab02.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lab04.1-Extra" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -173,9 +167,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="279" y="56" key="#Project_Structure" timestamp="1588175337625">
-      <screen x="0" y="23" width="1680" height="943" />
+    <state x="319" y="27" key="#Project_Structure" timestamp="1588195890339">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="319" y="27" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1588195890339" />
     <state x="279" y="56" key="#Project_Structure/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588175337625" />
     <state x="408" y="136" width="1143" height="765" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588025998269">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -190,14 +185,19 @@
     </state>
     <state x="672" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588024407140" />
     <state x="588" y="68" key="#com.intellij.ide.util.MemberChooser/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588041373337" />
-    <state x="529" y="236" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1588175335361">
-      <screen x="0" y="23" width="1680" height="943" />
+    <state x="605" y="235" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1588195886199">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="605" y="235" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588195886199" />
     <state x="529" y="236" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588175335361" />
     <state x="585" y="279" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1588019256760">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="279" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1588019256760" />
+    <state x="594" y="78" key="FileChooserDialogImpl" timestamp="1588195851480">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="594" y="78" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588195851480" />
     <state width="1561" height="107" key="GridCell.Tab.0.bottom" timestamp="1588195572466">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
@@ -218,6 +218,10 @@
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588173877246" />
     <state width="1561" height="107" key="GridCell.Tab.0.right/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588195572465" />
+    <state x="426" y="70" key="NewModule_or_Project.wizard" timestamp="1588195859871">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="426" y="70" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1588195859871" />
     <state x="178" y="0" key="SettingsEditor" timestamp="1588001156857">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
