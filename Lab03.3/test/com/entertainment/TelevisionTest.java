@@ -51,7 +51,16 @@ public class TelevisionTest {
 
     @Test
     public void compareToTest() {
+        tv2 = new Television("Apple", 20, DisplayType.LCD);
+        tv3 = new Television("Toshiba", 40, DisplayType.LED);
 
+        // compare two identical instances via the compareTo method
+        int comparison1 = tv1.compareTo(tv2);
+        assertEquals(0, comparison1);
+
+        // compare two dissimilar instances via the compareTo method
+        int comparison2 = tv1.compareTo(tv3);
+        assertNotEquals(0, comparison2);
     }
 
     @Test
