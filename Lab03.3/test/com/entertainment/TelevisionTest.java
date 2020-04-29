@@ -39,7 +39,7 @@ public class TelevisionTest {
     }
 
     @Test
-    public void changeChannelException() {
+    public void changeChannelInvalidChannelTest() {
         try {
             tv1.changeChannel(-20);
             fail("Should have thrown an InvalidChannelException");
@@ -56,12 +56,18 @@ public class TelevisionTest {
 
     @Test
     public void equalsTest() {
-
+        tv2 = new Television("Apple", 20, DisplayType.LCD);
+        tv3 = new Television("Toshiba", 40, DisplayType.LED);
+        assertTrue(tv1.equals(tv2));
+        assertFalse(tv1.equals(tv3));
     }
 
     @Test
     public void hashCodeTest() {
-
+        tv2 = new Television("Apple", 20, DisplayType.LCD);
+        tv3 = new Television("Toshiba", 40, DisplayType.LED);
+        assertEquals(tv1.hashCode(), tv2.hashCode());
+        assertNotEquals(tv1.hashCode(), tv3.hashCode());
     }
 }
 
