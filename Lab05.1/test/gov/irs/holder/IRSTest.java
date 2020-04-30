@@ -28,14 +28,15 @@ public class IRSTest {
    */
   @Test
   public void testSingleton() {
-    
+    assertSame(IRS.getInstance(), IRS.getInstance());
   }
   
   @Test
   public void testClassLoading() {
     // TODO: call IRS.touch() and note the output - the call to IRS.getInstance() should be commented out for this
-    
+    //IRS.touch();
     // TODO: call IRS.getInstance() and note the output - the call to IRS.touch() should be commented out for this
+    IRS.getInstance();
     
   }
 }

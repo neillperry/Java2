@@ -18,7 +18,7 @@ public class IRSEnumTest {
   
   @Test
   public void testNormalClientUsage() {
-    IRSEnum irs = IRSEnum.getInstance();
+    IRS irs = IRS.getInstance();
     irs.register(new Corporation("JavaTunes"));
     irs.collectTaxes();
   }

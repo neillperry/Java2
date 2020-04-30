@@ -52,7 +52,10 @@ public class EmployeeFactoryTest {
    */
   @Test
   public void testCreateEmployeeSalaried() {
-    // TODO
+    Employee emp = EmployeeFactory.createEmployee(seMap);
+    SalariedEmployee salaried = (SalariedEmployee) emp;
+    assertEquals(50000.0, salaried.getSalary(), 0.001);
+    assertTrue(salaried.getName().equals("Jackie"));
   }
   
   /**
@@ -60,15 +63,21 @@ public class EmployeeFactoryTest {
    */
   @Test
   public void testCreateEmployeeHourly() {
-    // TODO
+    Employee emp = EmployeeFactory.createEmployee(heMap);
+    HourlyEmployee hourly = (HourlyEmployee) emp;
+    assertEquals(50.0, hourly.getRate(), 0.001);
+    assertEquals(40.0, hourly.getHours(), 0.001);
+    assertTrue(hourly.getName().equals("Jackie"));
   }
   
   /**
    * TASK: verify that passing a map with an invalid "type" value results in IllegalArgumentException.
    * The only valid values for "type" are "HE" or "SE".
    */
-  @Test
+  @Test (expected= IllegalArgumentException.class)
   public void testCreateEmployeeInvalidTypeThrowsIllegalArgumentException() {
-    // TODO
+    Map<String,String> badMap = new HashMap<>();
+    badMap.put("type",     "FerrisBuehler");
+    Employee emp = EmployeeFactory.createEmployee(badMap);
   }
 }
