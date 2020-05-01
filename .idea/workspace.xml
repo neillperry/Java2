@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0b33d942-3410-4033-8e6a-9f2bda681cf8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab05.2/src/com/javatunes/personnel/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.2/src/com/javatunes/personnel/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab05.2/src/com/javatunes/personnel/HourlyEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.2/src/com/javatunes/personnel/HourlyEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab05.2/src/com/javatunes/personnel/SalariedEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.2/src/com/javatunes/personnel/SalariedEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05.2/com/javatunes/personnel/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05.2/com/javatunes/personnel/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05.2/com/javatunes/personnel/HourlyEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05.2/com/javatunes/personnel/HourlyEmployee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab05.2/com/javatunes/personnel/SalariedEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05.2/com/javatunes/personnel/SalariedEmployee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab05.2/src/com/javatunes/personnel/EmployeeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.2/src/com/javatunes/personnel/EmployeeFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

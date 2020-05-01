@@ -37,10 +37,12 @@ public class EmployeeFactory {
         Double hours = Double.valueOf(inputMap.get("hours"));
         emp = new HourlyEmployee(name, hireDate, rate, hours);
 
-    } else {
+    } else if (typeEmployee.equals("SE")) {
         // create a Salaried Employee
         Double salary = Double.valueOf(inputMap.get("salary"));
         emp = new SalariedEmployee(name, hireDate, salary);
+    } else {
+        throw new IllegalArgumentException("Invalid type: " + typeEmployee);
     }
 
     return emp;
