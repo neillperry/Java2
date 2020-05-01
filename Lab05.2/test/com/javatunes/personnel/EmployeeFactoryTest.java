@@ -1,6 +1,8 @@
 package com.javatunes.personnel;
 
 import static org.junit.Assert.*;
+
+import java.sql.Date;
 import java.util.HashMap;
 import java.util.Map;
 import org.junit.Before;
@@ -54,8 +56,9 @@ public class EmployeeFactoryTest {
   public void testCreateEmployeeSalaried() {
     Employee emp = EmployeeFactory.createEmployee(seMap);
     SalariedEmployee salaried = (SalariedEmployee) emp;
+    assertTrue(salaried.getClass().equals(SalariedEmployee.class));
     assertEquals(50000.0, salaried.getSalary(), 0.001);
-    assertTrue(salaried.getName().equals("Jackie"));
+    assertTrue(checkNameHireDate(salaried));
   }
   
   /**
@@ -65,9 +68,10 @@ public class EmployeeFactoryTest {
   public void testCreateEmployeeHourly() {
     Employee emp = EmployeeFactory.createEmployee(heMap);
     HourlyEmployee hourly = (HourlyEmployee) emp;
+    assertTrue(hourly.getClass().equals(HourlyEmployee.class));
     assertEquals(50.0, hourly.getRate(), 0.001);
     assertEquals(40.0, hourly.getHours(), 0.001);
-    assertTrue(hourly.getName().equals("Jackie"));
+    assertTrue(checkNameHireDate(hourly));
   }
   
   /**
@@ -79,5 +83,14 @@ public class EmployeeFactoryTest {
     Map<String,String> badMap = new HashMap<>();
     badMap.put("type",     "FerrisBuehler");
     Employee emp = EmployeeFactory.createEmployee(badMap);
+  }
+
+
+  private boolean checkNameHireDate(Employee emp) {
+    boolean result = false;
+    if (emp.getHireDate().equals(Date.valueOf("1990-08-24")) && emp.getName().equals("Jackie")) {
+      result = true;
+    }
+    return result;
   }
 }

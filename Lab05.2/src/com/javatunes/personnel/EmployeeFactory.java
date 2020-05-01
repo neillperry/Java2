@@ -35,7 +35,7 @@ public class EmployeeFactory {
         // create an Hourly Employee
         Double rate = Double.valueOf(inputMap.get("rate"));
         Double hours = Double.valueOf(inputMap.get("hours"));
-      emp = new HourlyEmployee(name, hireDate, rate, hours);
+        emp = new HourlyEmployee(name, hireDate, rate, hours);
 
     } else {
         // create a Salaried Employee
