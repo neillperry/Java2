@@ -15,14 +15,14 @@ public class SalariedEmployee
 extends Employee {
   private Double salary;
   
-  public SalariedEmployee() {
+  SalariedEmployee() {
   }
 
-  public SalariedEmployee(String name, Date hireDate) {
+  SalariedEmployee(String name, Date hireDate) {
     super(name, hireDate);
   }
   
-  public SalariedEmployee(String name, Date hireDate, Double salary) {
+  SalariedEmployee(String name, Date hireDate, Double salary) {
     this(name, hireDate);
     setSalary(salary);
   }

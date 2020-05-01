@@ -16,14 +16,14 @@ extends Employee {
   private Double rate;
   private Double hours;
   
-  public HourlyEmployee() {
+  HourlyEmployee() {
   }
   
-  public HourlyEmployee(String name, Date hireDate) {
+  HourlyEmployee(String name, Date hireDate) {
     super(name, hireDate);
   }
   
-  public HourlyEmployee(String name, Date hireDate, Double rate, Double hours) {
+  HourlyEmployee(String name, Date hireDate, Double rate, Double hours) {
     this(name, hireDate);
     setRate(rate);
     setHours(hours);

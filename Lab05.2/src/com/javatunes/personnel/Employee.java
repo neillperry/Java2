@@ -15,10 +15,10 @@ public abstract class Employee {
   private String name;
   private Date hireDate;
   
-  public Employee() {
+  Employee() {
   }
   
-  public Employee(String name, Date hireDate) {
+  Employee(String name, Date hireDate) {
     setName(name);
     setHireDate(hireDate);
   }

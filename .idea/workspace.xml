@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0b33d942-3410-4033-8e6a-9f2bda681cf8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab05.2/src/com/javatunes/personnel/EmployeeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.2/src/com/javatunes/personnel/EmployeeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab05.2/test/com/javatunes/personnel/EmployeeFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.2/test/com/javatunes/personnel/EmployeeFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab05.2/src/com/javatunes/personnel/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.2/src/com/javatunes/personnel/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab05.2/src/com/javatunes/personnel/HourlyEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.2/src/com/javatunes/personnel/HourlyEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab05.2/src/com/javatunes/personnel/SalariedEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05.2/src/com/javatunes/personnel/SalariedEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab05.2/com/javatunes/personnel/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05.2/com/javatunes/personnel/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab05.2/com/javatunes/personnel/HourlyEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05.2/com/javatunes/personnel/HourlyEmployee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab05.2/com/javatunes/personnel/SalariedEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab05.2/com/javatunes/personnel/SalariedEmployee.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +67,22 @@
       <recent name="C:\StudentWork\IntmJ\workspace\Lab01.2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeeFactoryTest.testCreateEmployeeHourly">
+  <component name="RunManager" selected="JUnit.EmployeeFactoryTest">
+    <configuration name="EmployeeFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab05.2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javatunes.personnel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.EmployeeFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EmployeeFactoryTest.testCreateEmployeeHourly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab05.2" />
       <extension name="coverage">
@@ -112,22 +131,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IRSTest.testClassLoading" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab05.1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gov.irs.holder.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="gov.irs.holder" />
-      <option name="MAIN_CLASS_NAME" value="gov.irs.holder.IRSTest" />
-      <option name="METHOD_NAME" value="testClassLoading" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="IRSTest.testSingleton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab05.1" />
       <extension name="coverage">
@@ -146,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeeFactoryTest" />
         <item itemvalue="JUnit.EmployeeFactoryTest.testCreateEmployeeHourly" />
         <item itemvalue="JUnit.EmployeeFactoryTest.testCreateEmployeeSalaried" />
         <item itemvalue="JUnit.EmployeeFactoryTest.testCreateEmployeeInvalidTypeThrowsIllegalArgumentException" />
         <item itemvalue="JUnit.IRSTest.testSingleton" />
-        <item itemvalue="JUnit.IRSTest.testClassLoading" />
       </list>
     </recent_temporary>
   </component>
@@ -199,33 +202,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="594" y="78" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588195851480" />
-    <state width="1359" height="158" key="GridCell.Tab.0.bottom" timestamp="1588346075559">
+    <state width="1359" height="158" key="GridCell.Tab.0.bottom" timestamp="1588349159729">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588173877246" />
     <state width="1561" height="151" key="GridCell.Tab.0.bottom/0.23.1680.1027/-1280.23.1280.917@0.23.1680.1027" timestamp="1588199322890" />
-    <state width="1359" height="158" key="GridCell.Tab.0.bottom/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588346075559" />
+    <state width="1359" height="158" key="GridCell.Tab.0.bottom/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588349159729" />
     <state width="1561" height="161" key="GridCell.Tab.0.bottom/0.23.1680.943@0.23.1680.943" timestamp="1588200498207" />
-    <state width="1359" height="158" key="GridCell.Tab.0.center" timestamp="1588346075558">
+    <state width="1359" height="158" key="GridCell.Tab.0.center" timestamp="1588349159728">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588173877246" />
     <state width="1561" height="151" key="GridCell.Tab.0.center/0.23.1680.1027/-1280.23.1280.917@0.23.1680.1027" timestamp="1588199322890" />
-    <state width="1359" height="158" key="GridCell.Tab.0.center/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588346075558" />
+    <state width="1359" height="158" key="GridCell.Tab.0.center/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588349159728" />
     <state width="1561" height="161" key="GridCell.Tab.0.center/0.23.1680.943@0.23.1680.943" timestamp="1588200498206" />
-    <state width="1359" height="158" key="GridCell.Tab.0.left" timestamp="1588346075558">
+    <state width="1359" height="158" key="GridCell.Tab.0.left" timestamp="1588349159728">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588173877246" />
     <state width="1561" height="151" key="GridCell.Tab.0.left/0.23.1680.1027/-1280.23.1280.917@0.23.1680.1027" timestamp="1588199322889" />
-    <state width="1359" height="158" key="GridCell.Tab.0.left/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588346075558" />
+    <state width="1359" height="158" key="GridCell.Tab.0.left/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588349159728" />
     <state width="1561" height="161" key="GridCell.Tab.0.left/0.23.1680.943@0.23.1680.943" timestamp="1588200498206" />
-    <state width="1359" height="158" key="GridCell.Tab.0.right" timestamp="1588346075558">
+    <state width="1359" height="158" key="GridCell.Tab.0.right" timestamp="1588349159729">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588173877246" />
     <state width="1561" height="151" key="GridCell.Tab.0.right/0.23.1680.1027/-1280.23.1280.917@0.23.1680.1027" timestamp="1588199322890" />
-    <state width="1359" height="158" key="GridCell.Tab.0.right/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588346075558" />
+    <state width="1359" height="158" key="GridCell.Tab.0.right/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588349159729" />
     <state width="1561" height="161" key="GridCell.Tab.0.right/0.23.1680.943@0.23.1680.943" timestamp="1588200498207" />
     <state x="426" y="70" key="NewModule_or_Project.wizard" timestamp="1588195859871">
       <screen x="0" y="0" width="1920" height="1040" />
