@@ -16,9 +16,16 @@ import com.javatunes.billing.Location;
 public class OrderTaxTest {
   private ShoppingCart<Product> cart1;
   private ShoppingCart<Product> cart2;
+  private Location europeLocation;
+  private Location usaLocation;
+  private Location onlineLocation;
   
   @Before
   public void init() {
+    europeLocation = Location.EUROPE;
+    usaLocation = Location.USA;
+    onlineLocation = Location.ONLINE;
+
     cart1 = new ShoppingCart<Product>();  // $20.00
     cart1.addItem(new MusicItem("CD-501"));
     cart1.addItem(new MusicItem("CD-519"));
@@ -46,16 +53,25 @@ public class OrderTaxTest {
    */
   @Test
   public void testTaxOnlineOrder() {
-
+    Order order1 = OrderFactory.createOrder(onlineLocation, "online1");
+    order1.processCart(cart2);
+    assertTrue(order1.getClass().equals(Order.class));
+    assertEquals(order1.getTax(), 0.0, 0.001);
   }
   
   @Test
   public void testTaxEuropeOrder() {
-
+    Order order1 = OrderFactory.createOrder(europeLocation, "euro2");
+    order1.processCart(cart1);
+    assertTrue(order1.getClass().equals(Order.class));
+    assertEquals(order1.getTax(), 3.4, 0.001);
   }
   
   @Test
   public void testTaxUSAOrder() {
-
+    Order order1 = OrderFactory.createOrder(usaLocation, "usa3");
+    order1.processCart(cart2);
+    assertTrue(order1.getClass().equals(Order.class));
+    assertEquals(order1.getTax(), 10.0, 0.001);
   }
 }

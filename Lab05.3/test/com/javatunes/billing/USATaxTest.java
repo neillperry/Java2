@@ -11,7 +11,7 @@ package com.javatunes.billing;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-public class USATaxTest {
+public class USATaxTest  {
 
   @Test
   public void testTaxAmountUnder20() {

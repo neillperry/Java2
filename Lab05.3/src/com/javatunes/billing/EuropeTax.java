@@ -15,6 +15,16 @@ package com.javatunes.billing;
  *  
  * TODO: implement this algorithm.
  */
-public class EuropeTax {
+public class EuropeTax implements TaxCalculator {
+
+    public double taxAmount(double taxable) {
+        double calculatedTaxes = taxable * 0.17;
+        if (taxable > 100.0) {
+            calculatedTaxes += (taxable - 100.0) * 0.25;
+        }
+        return calculatedTaxes;
+    }
+
+
 
 }
