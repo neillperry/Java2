@@ -8,7 +8,7 @@
  */
 package com.entertainment.client;
 
-import com.entertainment.DisplayType;
+import com.entertainment.Television.DisplayType;
 import com.entertainment.Television;
 
 public class TelevisionClient {
