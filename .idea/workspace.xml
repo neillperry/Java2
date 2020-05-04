@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b33d942-3410-4033-8e6a-9f2bda681cf8" name="Default Changelist" comment="" />
+    <list default="true" id="0b33d942-3410-4033-8e6a-9f2bda681cf8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/MiniLab06.1/src/demo/innerclass/ui/LoginApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/MiniLab06.1/src/demo/innerclass/ui/LoginApp.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,19 +61,16 @@
       <recent name="C:\StudentWork\IntmJ\workspace\Lab01.2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OrderTaxTest.testTaxUSAOrder">
-    <configuration name="OnlineTaxTest.testTaxAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab05.3" />
+  <component name="RunManager" selected="Application.LoginApp">
+    <configuration name="LoginApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.innerclass.ui.LoginApp" />
+      <module name="MiniLab06.1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javatunes.billing.*" />
+          <option name="PATTERN" value="demo.innerclass.ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.javatunes.billing" />
-      <option name="MAIN_CLASS_NAME" value="com.javatunes.billing.OnlineTaxTest" />
-      <option name="METHOD_NAME" value="testTaxAmount" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LoginApp" />
         <item itemvalue="JUnit.OrderTaxTest.testTaxUSAOrder" />
         <item itemvalue="JUnit.OrderTaxTest" />
         <item itemvalue="JUnit.OrderTaxTest.testTaxOnlineOrder" />
         <item itemvalue="JUnit.USATaxTest.testTaxAmountUnder20" />
-        <item itemvalue="JUnit.OnlineTaxTest.testTaxAmount" />
       </list>
     </recent_temporary>
   </component>
