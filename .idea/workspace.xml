@@ -63,7 +63,7 @@
       <recent name="C:\StudentWork\IntmJ\workspace\Lab01.2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TelevisionTest (1)">
+  <component name="RunManager" selected="JUnit.MethodOrderTest">
     <configuration name="EmployeeTestAnonSubclass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab03.2" />
       <extension name="coverage">
@@ -79,8 +79,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TelevisionBrandChannelComparatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab06.1" />
+    <configuration name="MethodOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab07.1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.entertainment.*" />
@@ -88,7 +88,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.entertainment" />
-      <option name="MAIN_CLASS_NAME" value="com.entertainment.TelevisionBrandChannelComparatorTest" />
+      <option name="MAIN_CLASS_NAME" value="com.entertainment.MethodOrderTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MethodOrderTest" />
         <item itemvalue="JUnit.TelevisionTest (1)" />
         <item itemvalue="JUnit.TelevisionBrandChannelComparatorTest.testCustomCompare" />
         <item itemvalue="JUnit.EmployeeTestAnonSubclass" />
         <item itemvalue="JUnit.TelevisionTest" />
-        <item itemvalue="JUnit.TelevisionBrandChannelComparatorTest" />
       </list>
     </recent_temporary>
   </component>
