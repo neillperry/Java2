@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b33d942-3410-4033-8e6a-9f2bda681cf8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Lab07.2/src/com/javatunes/personnel/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab07.1/Lab07.1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab07.1/Lab07.1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab06.1/META-INF/Lab06.1.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab07.2/src/com/fastjava/annotation/Fast.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab07.2/src/com/fastjava/annotation/Fast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab07.2/src/com/javatunes/personnel/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab07.2/src/com/javatunes/personnel/Employee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

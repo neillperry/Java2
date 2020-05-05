@@ -8,13 +8,19 @@
  */
 package com.fastjava.annotation;
 
+import java.lang.annotation.Documented;
+
 /**
  * Declares a class or method to be "fast."
  * If declared at the type level, all methods will execute faster by the <b>"boost factor"</b> <code>value</code>.
  * If declared at the individual method level, that particular method will be faster.
  * If declared at both levels, any method-level declaration will override the type-level declaration.
  */
+
 public @interface Fast {
+    double boost();
+    boolean logInfo() default false;
+    String description() default "";
   /**
    * Performance boost, expressed as a decimal, ranging from 0.0 (no boost) to 1.0 (100% faster).
    * Required attribute.
