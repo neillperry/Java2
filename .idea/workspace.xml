@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b33d942-3410-4033-8e6a-9f2bda681cf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lab07.2/src/com/javatunes/personnel/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab07.2/src/com/fastjava/annotation/Fast.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab07.2/src/com/fastjava/annotation/Fast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab07.2/src/com/javatunes/personnel/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab07.2/src/com/javatunes/personnel/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab08.1/Lab08.1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab08.1/Lab08.1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab08.1/test/com/javatunes/compare/StringSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab08.1/test/com/javatunes/compare/StringSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab08.1/test/com/javatunes/thread/RepeatingPrinterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab08.1/test/com/javatunes/thread/RepeatingPrinterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab08.1/test/com/javatunes/thread/SimplePrinterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab08.1/test/com/javatunes/thread/SimplePrinterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,18 +65,29 @@
       <recent name="C:\StudentWork\IntmJ\workspace\Lab01.2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MethodOrderTest">
-    <configuration name="EmployeeTestAnonSubclass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab03.2" />
+  <component name="RunManager" selected="JUnit.StringSortTest.testStringListSort">
+    <configuration name="RepeatingPrinterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.thread.RepeatingPrinterTest" />
+      <module name="Lab08.1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javatunes.personnel.*" />
+          <option name="PATTERN" value="com.javatunes.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
-      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.EmployeeTestAnonSubclass" />
-      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimplePrinterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.thread.SimplePrinterTest" />
+      <module name="Lab08.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javatunes.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,17 +107,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TelevisionBrandChannelComparatorTest.testCustomCompare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab06.1" />
+    <configuration name="StringSortTest.testStringListSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab08.1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.entertainment.*" />
+          <option name="PATTERN" value="com.javatunes.compare.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.entertainment" />
-      <option name="MAIN_CLASS_NAME" value="com.entertainment.TelevisionBrandChannelComparatorTest" />
-      <option name="METHOD_NAME" value="testCustomCompare" />
+      <option name="PACKAGE_NAME" value="com.javatunes.compare" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.compare.StringSortTest" />
+      <option name="METHOD_NAME" value="testStringListSort" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,28 +138,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TelevisionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab06.1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.entertainment.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.entertainment" />
-      <option name="MAIN_CLASS_NAME" value="com.entertainment.TelevisionTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StringSortTest.testStringListSort" />
+        <item itemvalue="Application.RepeatingPrinterTest" />
+        <item itemvalue="Application.SimplePrinterTest" />
         <item itemvalue="JUnit.MethodOrderTest" />
         <item itemvalue="JUnit.TelevisionTest (1)" />
-        <item itemvalue="JUnit.TelevisionBrandChannelComparatorTest.testCustomCompare" />
-        <item itemvalue="JUnit.EmployeeTestAnonSubclass" />
-        <item itemvalue="JUnit.TelevisionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -165,11 +162,11 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="279" y="56" key="#Project_Structure" timestamp="1588697702501">
+    <state x="279" y="56" key="#Project_Structure" timestamp="1588715414778">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state x="319" y="27" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1588195890339" />
-    <state x="279" y="56" key="#Project_Structure/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588697702501" />
+    <state x="279" y="56" key="#Project_Structure/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588715414778" />
     <state x="408" y="136" width="1143" height="765" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588025998269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -183,11 +180,11 @@
     </state>
     <state x="672" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588024407140" />
     <state x="588" y="68" key="#com.intellij.ide.util.MemberChooser/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588364128080" />
-    <state x="529" y="236" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1588697700684">
+    <state x="529" y="236" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1588715413464">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state x="605" y="235" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588195886199" />
-    <state x="529" y="236" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588697700684" />
+    <state x="529" y="236" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588715413464" />
     <state x="585" y="279" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1588019256760">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -196,33 +193,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="594" y="78" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588195851480" />
-    <state width="1019" height="205" key="GridCell.Tab.0.bottom" timestamp="1588703416357">
+    <state width="865" height="204" key="GridCell.Tab.0.bottom" timestamp="1588715806428">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588173877246" />
     <state width="1561" height="151" key="GridCell.Tab.0.bottom/0.23.1680.1027/-1280.23.1280.917@0.23.1680.1027" timestamp="1588199322890" />
-    <state width="1019" height="205" key="GridCell.Tab.0.bottom/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588703416357" />
+    <state width="865" height="204" key="GridCell.Tab.0.bottom/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588715806428" />
     <state width="755" height="158" key="GridCell.Tab.0.bottom/0.23.1680.943@0.23.1680.943" timestamp="1588373383395" />
-    <state width="1019" height="205" key="GridCell.Tab.0.center" timestamp="1588703416357">
+    <state width="865" height="204" key="GridCell.Tab.0.center" timestamp="1588715806427">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588173877246" />
     <state width="1561" height="151" key="GridCell.Tab.0.center/0.23.1680.1027/-1280.23.1280.917@0.23.1680.1027" timestamp="1588199322890" />
-    <state width="1019" height="205" key="GridCell.Tab.0.center/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588703416357" />
+    <state width="865" height="204" key="GridCell.Tab.0.center/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588715806427" />
     <state width="755" height="158" key="GridCell.Tab.0.center/0.23.1680.943@0.23.1680.943" timestamp="1588373383395" />
-    <state width="1019" height="205" key="GridCell.Tab.0.left" timestamp="1588703416356">
+    <state width="865" height="204" key="GridCell.Tab.0.left" timestamp="1588715806427">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588173877246" />
     <state width="1561" height="151" key="GridCell.Tab.0.left/0.23.1680.1027/-1280.23.1280.917@0.23.1680.1027" timestamp="1588199322889" />
-    <state width="1019" height="205" key="GridCell.Tab.0.left/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588703416356" />
+    <state width="865" height="204" key="GridCell.Tab.0.left/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588715806427" />
     <state width="755" height="158" key="GridCell.Tab.0.left/0.23.1680.943@0.23.1680.943" timestamp="1588373383394" />
-    <state width="1019" height="205" key="GridCell.Tab.0.right" timestamp="1588703416357">
+    <state width="865" height="204" key="GridCell.Tab.0.right" timestamp="1588715806428">
       <screen x="0" y="23" width="1680" height="943" />
     </state>
     <state width="1630" height="211" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588173877246" />
     <state width="1561" height="151" key="GridCell.Tab.0.right/0.23.1680.1027/-1280.23.1280.917@0.23.1680.1027" timestamp="1588199322890" />
-    <state width="1019" height="205" key="GridCell.Tab.0.right/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588703416357" />
+    <state width="865" height="204" key="GridCell.Tab.0.right/0.23.1680.943/-1280.23.1280.1001@0.23.1680.943" timestamp="1588715806428" />
     <state width="755" height="158" key="GridCell.Tab.0.right/0.23.1680.943@0.23.1680.943" timestamp="1588373383395" />
     <state x="426" y="70" key="NewModule_or_Project.wizard" timestamp="1588195859871">
       <screen x="0" y="0" width="1920" height="1040" />
