@@ -32,4 +32,26 @@ public class TelevisionBrandChannelComparatorTest {
     tv2.changeChannel(50);  // now all properties are the same
     assertTrue(comparator.compare(tv1, tv2) == 0); // RCA = RCA, 50 = 50
   }
+
+  @Test
+  public void testCustomCompare() throws InvalidChannelException {  // throws clause needed because it's an unhandled checked exception
+    Television tv1 = new Television("RCA");
+    Television tv2 = new Television("Sony");
+    tv1.setVolume(14);
+    tv2.setVolume(41);
+
+    assertTrue(new Comparator<Television>() { public int compare(Television tv1, Television tv2) {
+      return Integer.compare(tv1.getVolume(), tv2.getVolume());
+    }}.compare(tv1, tv2) < 0);  // RCA < Sony
+
+
+    //assertTrue(comparator.compare(tv1, tv2) < 0);  // RCA = RCA, 50 < 60
+
+    tv1.setVolume(41);
+    tv2.setVolume(11);
+    //assertTrue(comparator.compare(tv1, tv2) == 0); // RCA = RCA, 50 = 50
+  }
+
+
+
 }
