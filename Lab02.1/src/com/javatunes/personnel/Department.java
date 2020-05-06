@@ -23,17 +23,14 @@ public class Department {
     setName(name);
     setLocation(location);
   }
-  
+
+  // we learned about Consumers
   public void listEmployees() {
-    for (Employee emp : employees) {
-      System.out.println(emp);
-    }
+    employees.forEach((emp) -> System.out.println(emp));
   }
   
   public void workEmployees() {
-    for (Employee emp : employees) {
-      emp.work();
-    }
+    employees.forEach((emp) -> emp.work());
   }
   
   /**
@@ -41,9 +38,7 @@ public class Department {
    * it will look similar to the workEmployees() method above
    */
   public void payEmployees() {
-    for (Employee e: employees) {
-      e.pay();
-    }
+    employees.forEach((emp) -> emp.pay());
   }
   
   // helper method to add an Employee to the collection
