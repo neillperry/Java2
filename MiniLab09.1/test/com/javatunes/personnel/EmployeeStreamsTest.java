@@ -10,6 +10,7 @@ package com.javatunes.personnel;
 
 import static org.junit.Assert.*;
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import org.junit.Before;
@@ -30,6 +31,23 @@ public class EmployeeStreamsTest {
    * 
    * RESULT: Employees 2 and 15, in that order.
    */
+
+ @Test
+ public void testSortThing() {
+   List<Employee> employees = allEmployees.stream()
+           .filter(emp -> emp.getName().startsWith("P") || emp.getName().startsWith("R"))
+           .sorted(Comparator.comparing(emp -> emp.getHireDate()))
+           .collect(Collectors.toList());
+
+   assertEquals(3, employees.size());
+   assertEquals(Long.valueOf(9),  employees.get(0).getId());
+   assertEquals(Long.valueOf(12), employees.get(1).getId());
+   assertEquals(Long.valueOf(4), employees.get(2).getId());
+ }
+
+
+
+
   @Test
   public void testSalaryLessThanSortNaturalOrder() {
     List<Employee> employees = allEmployees.stream()
