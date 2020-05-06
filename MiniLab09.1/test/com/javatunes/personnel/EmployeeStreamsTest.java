@@ -9,6 +9,8 @@
 package com.javatunes.personnel;
 
 import static org.junit.Assert.*;
+
+import java.sql.Date;
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
@@ -45,7 +47,18 @@ public class EmployeeStreamsTest {
    assertEquals(Long.valueOf(4), employees.get(2).getId());
  }
 
-
+@Test
+public void testNames() {
+   List<Employee> employees = allEmployees.stream()
+           .filter(emp -> emp.getHireDate().after(Date.valueOf("2006-01-01")))
+           .sorted(Comparator.comparing(Employee::getSalary).thenComparing(Employee::getName))
+           .peek(emp -> emp.setSalary(emp.getSalary() * 2.0))
+           .collect(Collectors.toList());
+  assertEquals(10, employees.size());
+  assertEquals(Double.valueOf(68000.0),  employees.get(0).getSalary());
+  assertEquals(Double.valueOf(190000.0),  employees.get(1).getSalary());
+  assertEquals(Double.valueOf(151000.0),  employees.get(2).getSalary());
+}
 
 
   @Test
