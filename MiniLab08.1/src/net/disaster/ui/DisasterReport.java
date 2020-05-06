@@ -29,7 +29,11 @@ public class DisasterReport {
         System.exit(0);
       }
     });
-    
+
+
+
+
+
     JButton button = new JButton("Do NOT Press Me");
     /*
      * Instance variables and methods, static variables and methods fully available to lambda.
