@@ -14,6 +14,7 @@ public class Account {
   private String name;
   private int balance;
   private Lock lock = new ReentrantLock();
+  private Lock lock2 = new ReentrantLock();
   
   public Account(String name, int balance) {
     this.name = name;
